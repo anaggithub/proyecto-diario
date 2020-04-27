@@ -1,0 +1,26 @@
+
+$color-white: #fff;
+$color-orange: #F68E01;
+$color-blue: #004797;
+
+
+$font-primary: Arial, Helvetica, sans-serif;
+
+@mixin box-shadow($x, $y, $blur, $spread, $color) {
+  -webkit-box-shadow: $x $y $blur $spread $color;
+  -moz-box-shadow: $x $y $blur $spread $color;
+  -ms-box-shadow: $x $y $blur $spread $color;
+  box-shadow: $x $y $blur $spread $color;
+}
+
+//@include box-shadow(0px, 0px, 0px, 4px, #fff);
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+//@include border-radius(15px);
+
