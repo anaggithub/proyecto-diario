@@ -1,6 +1,6 @@
-header {
+.header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 
   height: 50px;
@@ -8,6 +8,18 @@ header {
 
   .logo {
     width: 100px;
+  }
+
+  .nav {
+    &--list {
+      display: none;
+    }
+  }
+
+  .searchform {
+    input {
+      display: none;
+    }
   }
 }
 

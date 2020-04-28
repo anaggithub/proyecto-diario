@@ -26,4 +26,8 @@
     @extend %button;
     //background-color: rgba(0, 0, 0, 0.6);
   }
+  &--icon {
+    @extend %button;
+    background-color:transparent;
+  }
 }

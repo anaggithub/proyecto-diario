@@ -1,33 +1,11 @@
 import React from "react";
-import logo from "./logo.svg";
-//import './App.css';
 import "./styles/styles.scss";
+import Header from "./components/header";
 
 function App() {
   return (
     <div className="container">
-      <header>
-        <figure>
-          <img
-            src="https://www.infobae.com/resources/assets/img/logo_infobae_naranja.svg"
-            alt="logo"
-            className="logo"
-          />
-        </figure>
-
-        <nav>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </nav>
-      </header>
+     <Header />
       <body>
         <section id="currencies" className="currencies">
           <div className="currencies--container">
@@ -53,7 +31,7 @@ function App() {
               <figure>
                 <img
                   src="https://www.infobae.com/new-resizer/hDdKku6O08qefVOcSFhaJyji6D8=/999x561/filters:quality(100)/arc-anglerfish-arc2-prod-infobae.s3.amazonaws.com/public/WM7AU2BW5BFEBKMVXSAUT26PNA.jpg"
-                  alt="article image"
+                  alt="article "
                 />
               </figure>
               <button className="button--primary">Por autor</button>
@@ -87,7 +65,7 @@ function App() {
               <figure>
                 <img
                   src="https://www.infobae.com/new-resizer/hDdKku6O08qefVOcSFhaJyji6D8=/999x561/filters:quality(100)/arc-anglerfish-arc2-prod-infobae.s3.amazonaws.com/public/WM7AU2BW5BFEBKMVXSAUT26PNA.jpg"
-                  alt="article image"
+                  alt="article "
                 />
               </figure>
               <button className="button--primary">Por autor</button>
@@ -121,7 +99,7 @@ function App() {
               <figure>
                 <img
                   src="https://www.infobae.com/new-resizer/hDdKku6O08qefVOcSFhaJyji6D8=/999x561/filters:quality(100)/arc-anglerfish-arc2-prod-infobae.s3.amazonaws.com/public/WM7AU2BW5BFEBKMVXSAUT26PNA.jpg"
-                  alt="article image"
+                  alt="article "
                 />
               </figure>
               <button className="button--primary">Por autor</button>
@@ -155,7 +133,7 @@ function App() {
               <figure>
                 <img
                   src="https://www.infobae.com/new-resizer/hDdKku6O08qefVOcSFhaJyji6D8=/999x561/filters:quality(100)/arc-anglerfish-arc2-prod-infobae.s3.amazonaws.com/public/WM7AU2BW5BFEBKMVXSAUT26PNA.jpg"
-                  alt="article image"
+                  alt="article"
                 />
               </figure>
               <button className="button--primary">Por autor</button>
@@ -188,16 +166,16 @@ function App() {
         <footer className="footer">
           <ul id="socialmedia" className="footer--socialmedia">
             <li>
-              <i class="fab fa-facebook-f"></i>
+              <i className="fab fa-facebook-f"></i>
             </li>
             <li>
-              <i class="fab fa-twitter"></i>
+              <i className="fab fa-twitter"></i>
             </li>
             <li>
-              <i class="fab fa-instagram"></i>
+              <i className="fab fa-instagram"></i>
             </li>
             <li>
-              <i class="fab fa-youtube"></i>
+              <i className="fab fa-youtube"></i>
             </li>
           </ul>
           <div className="footer--info">
