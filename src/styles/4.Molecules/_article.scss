@@ -1,0 +1,22 @@
+.article {
+    position: relative;
+    display: block;
+    text-align: center;
+    justify-content: center;
+
+    &--image {
+      width: 100%;
+    }
+
+    &--paragraph {
+      text-align: left;
+      display: none;
+    }
+
+    &--button {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      margin: 20px;
+    }
+  }

@@ -4,18 +4,18 @@ import "../styles/styles.scss";
 function Footer() {
   return (
     <footer className="footer">
-      <ul id="socialmedia" className="footer--socialmedia">
+      <ul className="footer--socialmedia">
         <li>
-          <i className="fab fa-facebook-f"></i>
+          <i className="footer--socialmedia--icon fab fa-facebook-f"></i>
         </li>
         <li>
-          <i className="fab fa-twitter"></i>
+          <i className="footer--socialmedia--icon fab fa-twitter"></i>
         </li>
         <li>
-          <i className="fab fa-instagram"></i>
+          <i className="footer--socialmedia--icon fab fa-instagram"></i>
         </li>
         <li>
-          <i className="fab fa-youtube"></i>
+          <i className="footer--socialmedia--icon fab fa-youtube"></i>
         </li>
       </ul>
       <div className="footer--info">
@@ -23,10 +23,12 @@ function Footer() {
           <img
             src="https://www.infobae.com/resources/assets/img/logo_infobae_naranja.svg"
             alt="logo"
-            className="logo"
+            className="footer--info--logo"
           />
         </figure>
-        <p>Todos Los Derechos Reservados © 2020 Infobae</p>
+        <p className="footer--info--paragraph">
+          Todos Los Derechos Reservados © 2020 Infobae
+        </p>
       </div>
     </footer>
   );

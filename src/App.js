@@ -5,7 +5,6 @@ import Currencies from "./components/currencies";
 import News from "./components/news";
 import Footer from "./components/footer";
 
-
 function App() {
   return (
     <div className="container">
