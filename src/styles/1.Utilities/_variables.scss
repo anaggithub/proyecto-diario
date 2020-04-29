@@ -6,6 +6,14 @@ $color-blue: #004797;
 
 $font-primary: Arial, Helvetica, sans-serif;
 
+//otra font
+//font-family: 'Open Sans', sans-serif;
+
+//otra
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Source Sans Pro', sans-serif;
+
+
 @mixin box-shadow($x, $y, $blur, $spread, $color) {
   -webkit-box-shadow: $x $y $blur $spread $color;
   -moz-box-shadow: $x $y $blur $spread $color;
