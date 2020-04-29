@@ -28,6 +28,7 @@
   }
   &--icon {
     @extend %button;
+    width: 50px;
     background-color:transparent;
   }
 }

@@ -1,11 +1,11 @@
 import React from "react";
 import "./styles/styles.scss";
-import Header from "./components/header";
+import Header from "./components/header"
 
 function App() {
   return (
-    <div className="container">
-     <Header />
+    <div className="container">      
+    <Header />
       <body>
         <section id="currencies" className="currencies">
           <div className="currencies--container">
