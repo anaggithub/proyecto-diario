@@ -3,7 +3,7 @@
   text-decoration: none;
   font-family: $font-primary;
   width: 120px;
-  border:none;
+  border: none;
   //   &:hover {
 
   //   }
@@ -12,7 +12,6 @@
 .button {
   &--primary {
     @extend %button;
-    //    @include box-shadow(0px, 0px, 0px, 1px, black);
     color: white;
     background-color: rgba(0, 0, 0, 0.6);
     font-size: 15px;
@@ -29,6 +28,6 @@
   &--icon {
     @extend %button;
     width: 50px;
-    background-color:transparent;
+    background-color: transparent;
   }
 }

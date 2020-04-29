@@ -7,23 +7,23 @@ function App() {
     <div className="container">      
     <Header />
       <body>
-        <section id="currencies" className="currencies">
+        <section className="currencies">
           <div className="currencies--container">
             <div className="currencies--container--grid">
-              <div>1</div>
-              <div>2</div>
-              <div>3</div>
-              <div>4</div>
-              <div>5</div>
-              <div>6</div>
+              <div className="currencies--container--grid--element">1</div>
+              <div className="currencies--container--grid--element">2</div>
+              <div className="currencies--container--grid--element">3</div>
+              <div className="currencies--container--grid--element">4</div>
+              <div className="currencies--container--grid--element">5</div>
+              <div className="currencies--container--grid--element">6</div>
             </div>
-            <div className="currencies--container--ad">ADD</div>
+            <div className="currencies--container--ad">AD</div>
           </div>
         </section>
 
         <section id="news" className="news">
           <div className="news--grid">
-            <article className="firstarticle">
+            <article className="first-article">
               <h1>
                 El Gobierno reconoció que más del 75% de los monotributistas
                 está severamente afectado por la crisis del coronavirus

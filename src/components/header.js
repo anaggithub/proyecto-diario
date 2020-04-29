@@ -13,34 +13,30 @@ function Header() {
     </header>
   );
 
-  //A continuacion, cada uno de los 3 componentes del header:
-  //COMPONENTE NAVBAR
   function Nav() {
     const [navOpen, setNavOpen] = useState(false);
     const iconClass = !navOpen ? "fas fa-bars" : "fas fa-times";
     const navDisplay = !navOpen ? "none" : "block";
-    //  console.log(navOpen);
 
     return (
       <nav className="nav" onClick={() => setNavOpen(!navOpen)}>
-        <i className={iconClass}></i>
+        <i className={`nav--icon ${iconClass}`}></i>
         <ul className="nav--list" style={{ display: navDisplay }}>
-          <li>Últimas noticias</li>
-          <li>Política</li>
-          <li>Sociedad</li>
-          <li>Deportes</li>
-          <li>Techno</li>
-          <li>Docs</li>
-          <li>Campo</li>
-          <li>Tendencias</li>
-          <li>Vidriera</li>
-          <li>Personajes</li>
+          <li className="nav--list--element">Últimas noticias</li>
+          <li className="nav--list--element">Política</li>
+          <li className="nav--list--element">Sociedad</li>
+          <li className="nav--list--element">Deportes</li>
+          <li className="nav--list--element">Techno</li>
+          <li className="nav--list--element">Docs</li>
+          <li className="nav--list--element">Campo</li>
+          <li className="nav--list--element">Tendencias</li>
+          <li className="nav--list--element">Vidriera</li>
+          <li className="nav--list--element">Personajes</li>
         </ul>
       </nav>
     );
   }
 
-  //COMPONENTE LOGO
   function Logo() {
     const logoDisplay = searchInputOpen ? "none" : "block";
     return (
@@ -54,20 +50,19 @@ function Header() {
     );
   }
 
-  //COMPONENTE BUSCADOR
   function SearchInput() {
     return (
-      <form className="searchform" method="get">
-        <input type="text" style={{ display: searchInputDisplay }}></input>
+      <form className="search-form" method="get">
+        <input className="search-form--input" type="text" style={{ display: searchInputDisplay }}></input>
         <button
           type="submit"
-          className="button--icon"
+          className="search-form--button button--icon"
           onClick={(e) => {
             e.preventDefault();
             setSearchInputOpen(!searchInputOpen);
           }}
         >
-          <i className="fas fa-search"></i>
+          <i className="search-form--icon fas fa-search"></i>
         </button>
       </form>
     );
