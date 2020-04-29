@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import "../styles/styles.scss";
 
-function Article() {
+function Article({firstArticleClass =""}) {
   return (
-    <article className="article">
+    <article className={`article ${firstArticleClass}`}>
       <h1 className="article--title">
         El Gobierno reconoció que más del 75% de los monotributistas está
         severamente afectado por la crisis del coronavirus
@@ -27,7 +27,7 @@ function Article() {
         ‘blindada’ ante la pandemia”, manifestó el texto elaborado por el
         Gobierno.
       </p>
-      <p className="news--grid--article--paragraph">
+      <p className="article--paragraph">
         De acuerdo a la información oficial, en la Argentina hay alrededor de 5
         millones de trabajadores independientes —que no son asalariados en
         relación de dependencia— y que representan un 26% del total del empleo

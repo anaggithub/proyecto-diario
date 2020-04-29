@@ -14,6 +14,7 @@ function App() {
         <News />
         <Footer/>
       </body>
+    
     </div>
   );
 }

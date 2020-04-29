@@ -3,10 +3,12 @@
   flex-direction: column;
   text-align: center;
   min-height: 70px;
-  align-items: center;
+  align-items: center;  
+  padding: 10px;
   // border:black solid 1px;
 
   &--socialmedia {
+    margin:10px;
     display: flex;
     justify-content: center;
 
@@ -19,12 +21,15 @@
   }
 
   &--info {
+  
     &--logo {
+      margin:10px;
       width: 100px;
       margin-right: 10px;
     }
 
     &--paragraph {
+      margin:10px;
       padding: 0;
       border: black solid 1px;
       font-size: 12px;
@@ -40,7 +45,7 @@
   .footer {
     flex-direction: row;
     &--socialmedia {
-      width: 30%;
+      width: 40%;
     }
     &--info {
       display: flex;
