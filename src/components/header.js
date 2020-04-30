@@ -42,7 +42,8 @@ function Header() {
     return (
       <figure style={{ display: logoDisplay }}>
         <img
-          src="https://www.infobae.com/resources/assets/img/logo_infobae_naranja.svg"
+          src={process.env.PUBLIC_URL + "images/logo_infobae_naranja.svg"}
+         
           alt="logo"
           className="logo"
         />

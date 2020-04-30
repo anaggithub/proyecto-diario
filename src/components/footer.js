@@ -21,7 +21,7 @@ function Footer() {
       <div className="footer--info">
         <figure>
           <img
-            src="https://www.infobae.com/resources/assets/img/logo_infobae_naranja.svg"
+            src={process.env.PUBLIC_URL + "images/logo_infobae_naranja.svg"}
             alt="logo"
             className="footer--info--logo"
           />
