@@ -57,7 +57,7 @@ function Header() {
         <input className="search-form--input" type="text" style={{ display: searchInputDisplay }}></input>
         <button
           type="submit"
-          className="search-form--button button--icon"
+          className="search-form--button button button-icon"
           onClick={(e) => {
             e.preventDefault();
             setSearchInputOpen(!searchInputOpen);

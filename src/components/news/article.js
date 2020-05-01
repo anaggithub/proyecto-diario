@@ -1,12 +1,13 @@
 import React from "react";
 import "../../styles/styles.scss";
 
-function Article({ firstArticleClass = "", title, image, content }) {
+function Article({ firstArticleClass = "", title, author ="Anónimo", image, content, description }) {
     return (
         <article className={`article ${firstArticleClass}`}>
-            <h1 className="article--title">
+            <h3 className="article--title">
                 {title}
-            </h1>
+            </h3>
+            <p className="article--description">{description}</p>
             <figure>
                 <img
                     src={image}
@@ -14,7 +15,7 @@ function Article({ firstArticleClass = "", title, image, content }) {
                     className="article--image"
                 />
             </figure>
-            {/* <button className="article--button button--primary">{autor}</button> */}
+            <button className="article--button button button-secondary"> {author}</button>
             <p className="article--paragraph">
                 {content}
             </p>

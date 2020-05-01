@@ -1,10 +1,10 @@
 .currencies {
-  color: white;
+  color: $color-secondary;
   text-align: center;
   display: flex;
   flex-direction: column;
   margin: 30px;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+  @include box-shadow(2px, 2px, 10px, 1px, rgba(0, 0, 0, 0.25));
   padding: 5px 5px 10px 5px;
 
   &--grid {
@@ -12,13 +12,12 @@
     flex-wrap: wrap;
   }
   &--ad {
-    background-color: #004797;
+    background-color: $color-blue;
     height: 80px;
-
     text-align: center;
     border: white solid 1px;
 
-    img {
+    &--image {
       display: block;
       max-width: 100%;
       max-height: 100%;
@@ -31,7 +30,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   height: 100px;
   width: 50%;
   background-color: $color-orange;
@@ -51,7 +49,7 @@
       display: flex;
       width: 10%;
       height: auto;
-      img {
+      &--image {
         align-content: center;
       }
     }
@@ -60,10 +58,10 @@
   .currency {
     flex-grow: 1;
 
-    &--title{
+    &--title {
       font-size: 0.8rem;
     }
-    &--paragraph{
+    &--paragraph {
       font-size: 2.3rem;
       font-weight: 600;
     }

@@ -41,7 +41,7 @@ const Currencies = () => {
                 {renderCurrencies()}
             </div>
             <div className="currencies--ad">
-                <img src="https://arc-anglerfish-arc2-prod-infobae.s3.amazonaws.com/public/ED5ADYJYIRA63DEWO4UZMBAC44.jpg" alt="ad"></img>
+                <img className="currencies--ad--image" src="https://arc-anglerfish-arc2-prod-infobae.s3.amazonaws.com/public/ED5ADYJYIRA63DEWO4UZMBAC44.jpg" alt="ad"></img>
             </div>
 
         </section>
