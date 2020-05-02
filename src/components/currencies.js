@@ -31,7 +31,7 @@ const Currencies = () => {
     ]
 
     const renderCurrencies = () => {
-        let newArray = currencies.map(e => <Currency dolar={e.dolar} valor={e.valor} key={e.dolar + 1}/>)
+        let newArray = currencies.map(e => <Currency dolar={e.dolar} valor={e.valor} key={e.dolar + 1} />)
         return newArray
     }
 
@@ -46,10 +46,6 @@ const Currencies = () => {
 
         </section>
     );
-
-
-
-
 }
 
 const Currency = ({ dolar, valor }) => {

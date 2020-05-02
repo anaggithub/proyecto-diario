@@ -1,6 +1,4 @@
 .header {
-  color:$color-primary;
-  font-family: $font-primary;
   padding: 5px;
   display: flex;
   justify-content: space-between;
@@ -23,7 +21,7 @@
       z-index: 1;
       top: 38px;
       left: 0;
-      background-color: white;
+      background-color: $color-secondary;
       width: 200px;
       text-align: left;
    
