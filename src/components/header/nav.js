@@ -2,24 +2,24 @@ import React, { useState } from "react";
 import "../../styles/styles.scss";
 
 const Nav = () => {
-  const [navOpen, setNavOpen] = useState(false);
-  const iconClass = navOpen ? "fas fa-times" : "fas fa-bars";
-  const navDisplay = navOpen ? "block" : "none";
+
+  const [isNavOpen, setNavOpen] = useState(false);
+  const iconClass = isNavOpen ? "fas fa-times" : "fas fa-bars";
+  const navDisplay = isNavOpen ? "block" : "none";
+
+  const navItems = ["Últimas noticias", "Política", "Sociedad", "Deportes", "Techno", "Docs", "Campo", "Tendencias", "Vidriera", "Personajes"]
+
+  const Item = ({ name }) => {
+    return (
+      <li className="nav--list--element">{name}</li>
+    )
+  }
 
   return (
-    <nav className="nav" onClick={() => setNavOpen(!navOpen)}>
+    <nav className="nav" onClick={() => setNavOpen(!isNavOpen)}>
       <i className={`nav--icon ${iconClass}`}></i>
       <ul className="nav--list" style={{ display: navDisplay }}>
-        <li className="nav--list--element">Últimas noticias</li>
-        <li className="nav--list--element">Política</li>
-        <li className="nav--list--element">Sociedad</li>
-        <li className="nav--list--element">Deportes</li>
-        <li className="nav--list--element">Techno</li>
-        <li className="nav--list--element">Docs</li>
-        <li className="nav--list--element">Campo</li>
-        <li className="nav--list--element">Tendencias</li>
-        <li className="nav--list--element">Vidriera</li>
-        <li className="nav--list--element">Personajes</li>
+        {navItems.map(e => <Item name={e} key={e + 1} />)}
       </ul>
     </nav>
   );

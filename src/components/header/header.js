@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../styles/styles.scss";
 import SearchContainer from "./search-container"
 import Nav from "./nav"
 import Logo from "./logo"
 
 const Header = () => {
+
   return (
     <header className="header">
       <Nav />
