@@ -30,11 +30,5 @@ $font-special: 'Source Sans Pro', sans-serif;
  }
 
 
-@function invert($color, $amount: 100%){
-  $inverse: change-color($color, $hue: hue($color) + 180);
-  @return mix($inverse, $color, $amount);
-}
-
-
 
 

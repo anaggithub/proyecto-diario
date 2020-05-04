@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/styles.scss";
 
-function Footer() {
+const Footer = () => {
   return (
     <footer className="footer">
       <ul className="footer--socialmedia">
