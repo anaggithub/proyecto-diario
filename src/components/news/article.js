@@ -5,7 +5,7 @@ function Article({ firstArticleClass = "", title, author ="Anónimo", image, con
     return (
         <article className={`article ${firstArticleClass}`}>
             <h3 className="article--title">
-                {title}
+                {title.substring(0,80)}
             </h3>
             <p className="article--description">{description}</p>
             <figure>
