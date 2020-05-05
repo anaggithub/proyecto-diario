@@ -1,19 +1,29 @@
-@media only screen and (min-width: 425px) {
+.news {
+  display:flex;
+  margin: 0 10px 0 10px;
+//  border: #000000 solid 1px;
+
+  &--grid{
+    text-align: left;
+  //  border: pink solid 1px;
+  }
+}
+
+@media only screen and (min-width: 500px) {
   .news {
     &--grid {
       display: grid;
-      justify-content: center;
-      grid-gap: 10px;
-      grid-template-columns: repeat(2, 48%);
+      grid-gap: 10px; 
+      grid-template-columns: repeat(2, 49%);
       grid-template-rows: repeat(auto, auto);
     }
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 700px) {
   .news {
     &--grid {
-      grid-template-columns: repeat(3, 30%);      
+      grid-template-columns: repeat(3, 32%); 
     }
   }
 }
@@ -21,7 +31,7 @@
 @media only screen and (min-width: 1020px) {
   .news {
     &--grid {
-      grid-template-columns: repeat(4, 20%);      
+      grid-template-columns: repeat(4, 24%);
     }
   }
 }

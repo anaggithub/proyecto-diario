@@ -27,8 +27,14 @@ class News extends React.Component {
     return (
       <section className="news">
         <div className="news--grid">
-          {this.state.articles.map(article => <Article title={article.title} author={article.author} description={article.description} image={article.urlToImage} content={article.content} key={article.title + 1} />)}
-
+          {this.state.articles.map(article =>
+            <Article
+              title={article.title}
+              author={article.author}
+              description={article.description}
+              image={article.urlToImage}
+              content={article.content}
+              key={article.title + 1} />)}
         </div>
       </section>
     )
