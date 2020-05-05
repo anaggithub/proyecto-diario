@@ -1,9 +1,10 @@
-.currencies {
+.dollar-rate {
   color: $color-secondary;
   @include flex-column-box;
   margin: 30px;
   padding: 5px 5px 10px 5px;
   @include box-shadow(2px, 2px, 10px, 1px, rgba(0, 0, 0, 0.25));
+
   &--grid {
     display: flex;
     flex-wrap: wrap;
@@ -23,17 +24,50 @@
   }
 }
 
-.currency {
+.rate {
   @include flex-column-box;
   justify-content: center;
-  height: 100px;
+  height: 90px;
   width: 50%;
   background-color: $color-orange;
   border: white solid 1px;
+
+  &--title {
+    font-size: 0.8rem;
+  }
+  &--paragraph {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+}
+
+@media only screen and (min-width: 400px) {
+  .rate {
+    &--title {
+      font-size: 0.9rem;
+    }
+    &--paragraph {
+      font-size: 2.2rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .rate {
+    &--title {
+      font-size: 1.1rem;
+    }
+    &--paragraph {
+      font-size: 2.3rem;
+    }
+  }
 }
 
 @media only screen and (min-width: 768px) {
-  .currencies {
+}
+
+@media only screen and (min-width: 1024px) {
+  .dollar-rate {
     flex-direction: row;
     padding: 2px 2px 5px 2px;
 
@@ -51,15 +85,14 @@
     }
   }
 
-  .currency {
+  .rate {
     flex-grow: 1;
 
     &--title {
       font-size: 0.8rem;
     }
     &--paragraph {
-      font-size: 2.3rem;
-      font-weight: 600;
-    }
+      font-size: 2rem;
+      }
   }
 }

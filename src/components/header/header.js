@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "../../styles/styles.scss";
 import SearchContainer from "./search-container"
 import Nav from "./nav"

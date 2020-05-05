@@ -1,23 +1,20 @@
 import React from "react";
 import "../../styles/styles.scss";
 import Article from "./article";
-
-const APIKEY = "6bdbaae94d6944cbb68a55fcda4e5bea"
-const URL = 'http://newsapi.org/v2/top-headlines?' +
-  'country=ar&' +
-  'apiKey=' + APIKEY
-const REQ = new Request(URL)
+import APIRequest from "../../services/apiservice"
 
 class News extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      articles: []
+      articles: [],
+      topic : ""
     }
   }
 
   async componentDidMount() {
-    const res = await fetch(REQ)
+    const res = await fetch(APIRequest())
+    //const res = await fetch(APIRequest("musica"))
     const data = await res.json()
     this.setState({ articles: data.articles })
     console.log(this.state.articles)
@@ -30,7 +27,7 @@ class News extends React.Component {
           {this.state.articles.map(article =>
             <Article
               title={article.title}
-              author={!article.author ? "Anonimo" : article.author} 
+              author={article.author ? article.author : "Anonimo"}
               description={article.description}
               image={article.urlToImage}
               content={article.content}
