@@ -1,7 +1,7 @@
 import React from "react";
 import "../../styles/styles.scss";
 
-const Article = ({ firstArticleClass = "", title, author = "Anónimo", image, content, description }) => {
+const Article = ({ firstArticleClass = "", title, author, image, content, description }) => {
     return (
         <article className={`article ${firstArticleClass}`}>
             <h3 className="article--title">

@@ -30,7 +30,7 @@ class News extends React.Component {
           {this.state.articles.map(article =>
             <Article
               title={article.title}
-              author={article.author}
+              author={!article.author ? "Anonimo" : article.author} 
               description={article.description}
               image={article.urlToImage}
               content={article.content}
