@@ -6,10 +6,10 @@ import ArticleDetail from "./pages/article-detail";
 const App = () => {
 
   return (
-    <body>
+    <div>
       {/* <Home /> */}
       <ArticleDetail />
-    </body>
+    </div>
   );
 }
 
