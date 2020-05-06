@@ -1,10 +1,9 @@
-@import './../../styles/variables.scss';
+@import "./../../styles/variables.scss";
 
 .footer {
   font-family: $font-special;
   height: 200px;
   @include flex-column-box;
- 
   padding: 30px 20px 30px 20px;
 
   &--socialmedia {
@@ -19,20 +18,15 @@
   }
 
   &--info {
-    // &--logo {
+    // &--apititle {
+    //   background-color: red;
     //   margin: 10px;
     //   width: 100px;
-    //   margin-bottom: 30px;
+    //   margin-bottom: 50px;
     // }
 
-    &--apititle {
-      margin: 10px;
-      width: 100px;
-      margin-bottom: 30px;
-    }
-
     &--paragraph {
-      // background-color: invert($color-gray, 80%);
+      margin-top: 20px;
       //  border: black solid 1px;
       font-size: 0.8rem;
       font-weight: 600;
@@ -42,18 +36,21 @@
 
 @media only screen and (min-width: 768px) {
   .footer {
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+
     &--socialmedia {
       &--icon {
         width: 43px;
         padding: 10px 5px 10px 5px;
       }
     }
-
     &--info {
-      // &--logo {
-      //   width: 150px;
-      // }
+      margin-top: 10px;
+
       &--paragraph {
+        margin-top: 10px;
         font-size: 1rem;
       }
     }
@@ -62,19 +59,19 @@
 
 @media only screen and (min-width: 1024px) {
   .footer {
-    flex-direction: row;
-    align-items: center;
     &--socialmedia {
-      width: 40%;
+      width: 30%;
+      margin: 0px;
     }
     &--info {
+      margin: 0px;
       display: flex;
       align-items: center;
-
-      // &--logo {
-      //   margin: 0px;
-      //   margin-right: 40px;
-      // }
+      &--paragraph {
+        margin: 0px;
+        margin-left: 30px;
+        font-size: 1rem;
+      }
     }
   }
 }

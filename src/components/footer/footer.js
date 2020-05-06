@@ -20,16 +20,9 @@ const Footer = () => {
         </li>
       </ul>
       <div className="footer--info">
-        {/* <figure>
-          <img
-            src={process.env.PUBLIC_URL + "images/logo_infobae_naranja.svg"}
-            alt="logo"
-            className="footer--info--logo"
-          />
-        </figure> */}
-        <APITitle className="footer--info--apititle"/>
+        <APITitle className="footer--info--apititle"/> 
         <p className="footer--info--paragraph">
-          Todos Los Derechos Reservados © 2020 Infobae
+          Todos Los Derechos Reservados © 2020 
         </p>
       </div>
     </footer>

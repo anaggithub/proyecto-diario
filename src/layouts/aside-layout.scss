@@ -1,0 +1,33 @@
+@import "./../styles/variables.scss";
+
+.aside-layout {
+  &--content {
+    margin-top: 20px;
+    @include flex-column-box;
+  //  flex-direction: column-reverse;
+
+    &--main {
+      padding: 5px;
+    }
+    &--aside {
+    //    display:none;
+      padding: 5px;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .aside-layout {
+    &--content {
+      display: flex;
+      flex-direction: row;
+
+      &--main {
+        width: 79%;
+      }
+      &--aside {
+        width: 18%;
+      }
+    }
+  }
+}
