@@ -1,0 +1,14 @@
+.search-container {
+  display: flex;
+  position: relative;
+  &--input {
+    position: absolute;
+    right: 50px;
+    top: 5px;
+    height: 25px;
+  }
+
+  &--button {
+    font-size: 20px;
+  }
+}
