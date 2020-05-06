@@ -1,9 +1,27 @@
-@import "1.Utilities/_variables.scss";
-@import "2.Quarks/_general.scss";
-@import "3.Atoms/_buttons.scss";
-@import "4.Molecules/_header.scss";
-@import "4.Molecules/_dollar-rate.scss";
-@import "4.Molecules/_article.scss";
-@import "4.Molecules/_news.scss";
-@import "4.Molecules/_footer.scss";
+@import './variables.scss';
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  color: $color-primary;
+}
+
+body {
+  font-family: $font-primary;
+  line-height: 1.6;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1030px;
+  margin: 0 auto;
+}

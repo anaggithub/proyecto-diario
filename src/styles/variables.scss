@@ -1,3 +1,4 @@
+//GENERAL STYLES
 $color-primary: black;
 $color-secondary: #fff;
 $color-gray: #d9d9d9;
@@ -5,8 +6,9 @@ $color-lighter-gray: #d5d5d5;
 $color-orange: #f68e01;
 $color-blue: #004797;
 $font-primary: Arial, Helvetica, sans-serif;
-$font-secondary: 'Open Sans', sans-serif;
-$font-special: 'Source Sans Pro', sans-serif;
+$font-secondary: "Open Sans", sans-serif;
+$font-special: "Source Sans Pro", sans-serif;
+$font-apititle: "Bree Serif", serif;
 
 @mixin box-shadow($x, $y, $blur, $spread, $color) {
   -webkit-box-shadow: $x $y $blur $spread $color;
@@ -21,10 +23,11 @@ $font-special: 'Source Sans Pro', sans-serif;
   border-radius: $radius;
 }
 
-@mixin flex-column-box{
+@mixin flex-column-box {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   text-align: center;
   //align-items: center;
- }
+}
+

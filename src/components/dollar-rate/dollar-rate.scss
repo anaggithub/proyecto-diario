@@ -1,3 +1,6 @@
+@import './../../styles/variables.scss';
+
+
 .dollar-rate {
   color: $color-secondary;
   @include flex-column-box;

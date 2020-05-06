@@ -8,7 +8,7 @@ import Footer from "./../components/footer/footer";
 const Home = () => {
 
     return (
-        <div class="container">
+        <div className="container">
             <Header />
             <DollarRate />
             <News />

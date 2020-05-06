@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/styles.scss";
+import "./news.scss";
 import Article from "./article";
 import APIRequest from "../../services/apiservice"
 

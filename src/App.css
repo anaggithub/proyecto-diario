@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+// @import "1.Utilities/_variables.scss";
+// @import "2.Quarks/_general.scss";
+// @import "3.Atoms/_buttons.scss";
+// @import "4.Molecules/_header.scss";
+// @import "4.Molecules/_dollar-rate.scss";
+// @import "4.Molecules/_article.scss";
+// @import "4.Molecules/_news.scss";
+// @import "4.Molecules/_footer.scss";
+
+$color-primary: black;
+$color-secondary: #fff;
+$color-gray: #d9d9d9;
+$color-lighter-gray: #d5d5d5;
+$color-orange: #f68e01;
+$color-blue: #004797;
+$font-primary: Arial, Helvetica, sans-serif;
+$font-secondary: "Open Sans", sans-serif;
+$font-special: "Source Sans Pro", sans-serif;
+$font-apititle: "Bree Serif", serif;
+
+@mixin box-shadow($x, $y, $blur, $spread, $color) {
+  -webkit-box-shadow: $x $y $blur $spread $color;
+  -moz-box-shadow: $x $y $blur $spread $color;
+  -ms-box-shadow: $x $y $blur $spread $color;
+  box-shadow: $x $y $blur $spread $color;
+}
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@mixin flex-column-box {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-evenly;
+  text-align: center;
+  //align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  color: $color-primary;
+}
+
+body {
+  font-family: $font-primary;
+  line-height: 1.6;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1030px;
+  margin: 0 auto;
+}
+
+%button {
+  padding: 0.5rem 0.7rem;
+  text-decoration: none;
+  font-family: $font-secondary;
+  width: 120px;
+  border: none;
+  transition: opacity 0.6s ease-in-out;
+  &:hover {
+    opacity: 0.6;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+.button {
+  &-primary {
+    @extend %button;
+  }
+  &-secondary {
+    @extend %button;
+    color: $color-secondary;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: 15px;
+    font-weight: 700;
+    @include border-radius(5px);
+  }
+  &-icon {
+    @extend %button;
+    color: $color-primary;
+    width: 50px;
+    background-color: transparent;
   }
 }

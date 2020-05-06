@@ -1,5 +1,7 @@
 import React from "react";
-import "../../styles/styles.scss";
+import "./article.scss";
+// podría ir (props), luego debajo colocar const {image, description} = props, o props.image, props.description 
+// porque props es un objeto!! Entonces se puede desestructurar
 
 const Article = ({ firstArticleClass = "", title, author, image, content, description }) => {
     return (

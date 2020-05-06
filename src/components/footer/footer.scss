@@ -1,3 +1,5 @@
+@import './../../styles/variables.scss';
+
 .footer {
   font-family: $font-special;
   height: 200px;
@@ -17,7 +19,13 @@
   }
 
   &--info {
-    &--logo {
+    // &--logo {
+    //   margin: 10px;
+    //   width: 100px;
+    //   margin-bottom: 30px;
+    // }
+
+    &--apititle {
       margin: 10px;
       width: 100px;
       margin-bottom: 30px;
@@ -42,9 +50,9 @@
     }
 
     &--info {
-      &--logo {
-        width: 150px;
-      }
+      // &--logo {
+      //   width: 150px;
+      // }
       &--paragraph {
         font-size: 1rem;
       }
@@ -63,10 +71,10 @@
       display: flex;
       align-items: center;
 
-      &--logo {
-        margin: 0px;
-        margin-right: 40px;
-      }
+      // &--logo {
+      //   margin: 0px;
+      //   margin-right: 40px;
+      // }
     }
   }
 }

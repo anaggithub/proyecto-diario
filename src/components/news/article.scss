@@ -1,3 +1,6 @@
+@import './../../styles/variables.scss';
+@import './../../styles/buttons.scss';
+
 .article {
   color: $color-primary;
   position: relative;
@@ -107,7 +110,7 @@
         margin-bottom: 5px;
       }
       .article--image {
-        height: 400px;
+        height: 430px;
       }
       .article--button {
         margin-bottom: 80px;

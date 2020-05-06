@@ -6,7 +6,7 @@ const Nav = () => {
   const [isNavOpen, setNavOpen] = useState(false);
   const iconClass = isNavOpen ? "fas fa-times" : "fas fa-bars";
   const navDisplay = isNavOpen ? "block" : "none";
-
+ 
   const navItems = ["Últimas noticias", "Política", "Sociedad", "Deportes", "Techno", "Docs", "Campo", "Tendencias", "Vidriera", "Personajes"]
 
   const Item = ({ name }) => {

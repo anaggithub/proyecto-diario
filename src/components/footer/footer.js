@@ -1,5 +1,6 @@
 import React from "react"
-import "../../styles/styles.scss"
+import "./footer.scss"
+import APITitle from "../apititle/apititle";
 
 const Footer = () => {
   return (
@@ -19,13 +20,14 @@ const Footer = () => {
         </li>
       </ul>
       <div className="footer--info">
-        <figure>
+        {/* <figure>
           <img
             src={process.env.PUBLIC_URL + "images/logo_infobae_naranja.svg"}
             alt="logo"
             className="footer--info--logo"
           />
-        </figure>
+        </figure> */}
+        <APITitle className="footer--info--apititle"/>
         <p className="footer--info--paragraph">
           Todos Los Derechos Reservados © 2020 Infobae
         </p>
