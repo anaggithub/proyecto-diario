@@ -1,9 +1,9 @@
 import React from "react";
-import "./header.scss";
-import SearchContainer from "../searchcontainer/search-container"
+import "./index.scss";
+import SearchContainer from "../searchcontainer"
 import Nav from "../navbar/nav"
 import NavItems from "../navbar/nav-items"
-import APITitle from "../apititle/apititle"
+import APITitle from "../apititle"
 
 const Header = () => {
 

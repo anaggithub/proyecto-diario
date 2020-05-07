@@ -1,0 +1,24 @@
+{
+    "articles": [
+        {
+            "title": "DOLAR SOLIDARIO",
+            "valor": "89.38"
+        },
+        {
+            "author": "DÓLAR BLUE",
+            "valor": "106"
+        },
+        {
+            "image": "CONTADO CON LIQUI",
+            "valor": "113"
+        },
+        {
+            "content": "DÓLAR BOLSA",
+            "valor": "111"
+        },
+        {
+            "description": "DÓLAR BCO NACIÓN",
+            "valor": "68.75"
+        }
+    ]
+}

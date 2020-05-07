@@ -1,12 +1,12 @@
 import React from "react"
 import "./../styles/styles.scss";
-import AsideLayout from "./../layouts/aside-layout"
+import {LayoutNews} from "../components/layouts";
 import Article from "../components/news/article";
 
 const ArticleDetail = () => {
 
     return (
-        <AsideLayout>
+        <LayoutNews>
             <Article
                 title="En plena cuarentena, creció el tránsito y se observaron largas filas en los accesos a la ciudad de Buenos Aires"
                 author="Infobae"
@@ -19,7 +19,7 @@ const ArticleDetail = () => {
                 
                 La evaluación del tránsito es realizado por el sistema de Anillo Digital que se despliega a lo largo de la General Paz y une la Capital Federal con distintos partidos bonaerenses; también en la AU Buenos Aires-La Plata.`}
                 description="Miles de vehículos particulares salieron a la calle este miércoles, con un 12% de mayor caudal en contraste con la semana pasada. En el transporte público continúa la suba gradual de pasajeros, pero se mantienen los números bajos en la demanda de los servicios" />
-        </AsideLayout>
+        </LayoutNews>
     );
 }
 

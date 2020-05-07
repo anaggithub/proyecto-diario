@@ -1,5 +1,5 @@
 import React from "react";
-import "./apititle.scss";
+import "./index.scss";
 
 function APITitle() {
     return (

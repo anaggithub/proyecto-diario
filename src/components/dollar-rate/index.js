@@ -1,5 +1,5 @@
 import React from "react";
-import "./dollar-rate.scss"
+import "./index.scss"
 
 const DollarRate = ({ rates = [] }) => {
 

@@ -1,17 +1,24 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import "./../styles/styles.scss";
-import DefaultLayout from "./../layouts/default-layout"
-import DollarRate from "../components/dollar-rate/dollar-rate";
-import Rates from "../components/dollar-rate/rates";
-import News from "../components/news/news";
+import Layout from "../components/layouts";
+import DollarRate from "../components/dollar-rate";
+import News from "../components/news";
+
+import rates from "../services/dollar-rate";
 
 const Home = () => {
 
+    const [dollarRates, setDollarRates] = useState([]);
+
+    useEffect(() => {
+        setDollarRates(rates())
+    }, [])
+
     return (
-        <DefaultLayout>
-            <DollarRate rates={Rates}/>
+        <Layout>
+            <DollarRate rates={dollarRates} />
             <News />
-        </DefaultLayout>
+        </Layout>
     );
 }
 

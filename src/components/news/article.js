@@ -4,6 +4,7 @@ import "./article.scss";
 // porque props es un objeto!! Entonces se puede desestructurar
 
 const Article = ({ firstArticleClass = "", title, author, image, content, description }) => {
+ 
     return (
         <article className={`article ${firstArticleClass}`}>
             <h3 className="article--title">
@@ -17,7 +18,7 @@ const Article = ({ firstArticleClass = "", title, author, image, content, descri
                     className="article--image"
                 />
             </figure>
-            <button className="article--button button button-secondary"> {author}</button>
+            <button className="article--button button button-secondary"> {author || "Anonimo"}</button>
             <p className="article--paragraph">
                 {content}
             </p>

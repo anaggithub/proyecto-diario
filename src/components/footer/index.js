@@ -1,6 +1,6 @@
 import React from "react"
-import "./footer.scss"
-import APITitle from "../apititle/apititle";
+import "./index.scss"
+import APITitle from "../apititle";
 
 const Footer = () => {
   return (

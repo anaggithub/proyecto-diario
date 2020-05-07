@@ -1,15 +1,15 @@
 import React from "react"
-import "./../styles/styles.scss";
-import Header from "./../components/header/header";
-import Footer from "./../components/footer/footer";
+import "../../styles/styles.scss"
+import Header from "../header";
+import Footer from "../footer";
 
-const DefaultLayout = (props) => {
+const DefaultLayout = ({children}) => {
 
     return (
         <div className="container">
             <Header />
             <div>
-                {props.children}
+                {children}
             </div>
             <Footer />
         </div>

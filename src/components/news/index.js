@@ -1,7 +1,7 @@
 import React from "react";
-import "./news.scss";
+import "./index.scss";
 import Article from "./article";
-import APIRequest from "../../services/apiservice"
+import APIRequest from "../../services/news"
 
 class News extends React.Component {
   constructor(props) {
@@ -13,8 +13,8 @@ class News extends React.Component {
   }
 
   async componentDidMount() {
-    const res = await fetch(APIRequest())
     //const res = await fetch(APIRequest("musica"))
+    const res = await fetch(APIRequest())
     const data = await res.json()
     this.setState({ articles: data.articles })
     console.log(this.state.articles)
@@ -27,7 +27,7 @@ class News extends React.Component {
           {this.state.articles.map(article =>
             <Article
               title={article.title}
-              author={article.author ? article.author : "Anonimo"}
+              author={article.author}            
               description={article.description}
               image={article.urlToImage}
               content={article.content}
