@@ -1,30 +1,20 @@
 import React, { useState, useEffect } from "react"
-import { LayoutNews } from "../components/layouts";
-import "./article-detail.scss";
+import { LayoutNews } from "../../components/layouts";
+import "./index.scss";
 
-import news from "../services/news";
+import news from "../../services/news";
 
 const ArticleDetail = () => {
 
     const [article, setArticle] = useState([]);
 
     useEffect(() => {
-        //   setArticle(await news())
-
         async function fetchData() {
-            const articles = await news()
+            const articles = await news("cine")
             const firstArt = articles[0]
             setArticle(firstArt)
         }
         fetchData();
-
-        // async function fetchData() {
-        //     const res = await news()
-        //     const newsArray = await res.json()
-        //     console.log(newsArray.articles)
-        //     setArticle(newsArray.articles[0])
-        // }
-        // fetchData();
     }, [])
 
 

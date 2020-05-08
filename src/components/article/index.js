@@ -1,5 +1,5 @@
 import React from "react";
-import "./article.scss";
+import "./index.scss";
 // podría ir (props), luego debajo colocar const {image, description} = props, o props.image, props.description 
 // porque props es un objeto!! Entonces se puede desestructurar
 

@@ -7,12 +7,12 @@ const DollarRate = ({ rates = [] }) => {
         <section className="dollar-rate">
             <div className="dollar-rate--grid">
                 {
-                    rates.map(e => {
-                        return <div className="rate" key={e.dolar +1}>
+                    rates.map(e => (
+                         <div className="rate" key={e.dolar +1}>
                             <h3 className="rate--title">{e.dolar}</h3>
                             <p className="rate--paragraph">{e.valor}</p>
                         </div>
-                    })
+                    ))
                 }
             </div>
             <div className="dollar-rate--ad">
