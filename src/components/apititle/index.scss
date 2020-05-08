@@ -1,7 +1,7 @@
-@import './../../styles/variables.scss';
+@import "../layouts/styles/general-styles.scss";
 
 .apititle {   
-    font-family: $font-apititle;
+    font-family: $font-title;
     font-size:24px;
     font-weight:300;
   }

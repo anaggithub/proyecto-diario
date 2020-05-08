@@ -11,18 +11,18 @@ const BYTOPIC_URL = 'http://newsapi.org/v2/everything?' +
     '&pageSize=23' +
     '&q='
 
-const callFetch = async (filter) => {
+const callFetch = async (topic) => {
     let request = ""
-    filter ? request = new Request(BYTOPIC_URL + filter) : request = new Request(TOPHEADLINES_URL)
+    topic ? request = new Request(BYTOPIC_URL + topic) : request = new Request(TOPHEADLINES_URL)
     const res = await fetch(request)
-    const data = await res.json()
-    console.log(data.articles)
-    return data.articles
+    const articles = await res.json()
+    return articles.articles
+    //   return await fetch(request)
 }
 
 const news = () => {
-    console.log(process.env.REACT_APP_MOCK)
-    return process.env.REACT_APP_MOCK ===true? newsMock : callFetch();    
+    //console.log(process.env.REACT_APP_MOCK)
+    return process.env.REACT_APP_MOCK === true ? newsMock : callFetch();
 };
 
 export default news

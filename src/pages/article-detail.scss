@@ -1,4 +1,4 @@
-@import "../layouts/styles/general-styles.scss";
+@import "../components/layouts/styles/general-styles.scss";
 
 .article {
   color: $color-primary;
@@ -17,16 +17,16 @@
   }
 
   &--description {
-    display: none;
+  
     font-family: $font-secondary;
   }
 
   &--button {
     font-size: 0.8rem;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    margin-bottom: 20px;
+    // position: absolute;
+    // bottom: 0;
+    // left: 0;
+    // margin-bottom: 20px;
     margin-left: 10px;
   }
 }

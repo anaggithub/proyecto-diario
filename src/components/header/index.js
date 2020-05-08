@@ -1,15 +1,14 @@
 import React from "react";
 import "./index.scss";
-import SearchContainer from "../searchcontainer"
-import Nav from "../navbar/nav"
-import NavItems from "../navbar/nav-items"
+import SearchContainer from "../search-container"
+import Nav from "./nav"
 import APITitle from "../apititle"
 
 const Header = () => {
 
   return (
     <header className="header">
-      <Nav items = {NavItems}/>
+      <Nav />
       <APITitle />
       <SearchContainer />
     </header>

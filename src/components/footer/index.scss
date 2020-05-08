@@ -1,4 +1,4 @@
-@import "./../../styles/variables.scss";
+@import "../layouts/styles/general-styles.scss";
 
 .footer {
   font-family: $font-special;
@@ -18,13 +18,6 @@
   }
 
   &--info {
-    // &--apititle {
-    //   background-color: red;
-    //   margin: 10px;
-    //   width: 100px;
-    //   margin-bottom: 50px;
-    // }
-
     &--paragraph {
       margin-top: 20px;
       //  border: black solid 1px;
