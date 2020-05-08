@@ -16,6 +16,7 @@ const callFetch = async (topic) => {
     topic ? request = new Request(BYTOPIC_URL + topic) : request = new Request(TOPHEADLINES_URL)
     const res = await fetch(request)
     const articles = await res.json()
+    console.log(articles.articles)
     return articles.articles
     //   return await fetch(request)
 }

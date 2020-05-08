@@ -1,115 +1,75 @@
 @import "../components/layouts/styles/general-styles.scss";
 
-.article {
+.article-detail {
   color: $color-primary;
-  position: relative;
-  border-bottom: solid rgba(0, 0, 0, 0.13) 1px;
-  margin-bottom: 10px;
+  text-align: center;
+  padding: 10px;
 
   &--title {
-    font-size: 1.1rem;
-    height: 100px;
+    // text-align: justify;
+    margin: 10px;
+    margin-bottom: 20px;
+  }
+
+  &--description {
+    margin: 10px;
+    font-family: $font-secondary;
   }
 
   &--image {
+    margin-top: 10px;
     width: 100%;
     height: 200px;
   }
 
-  &--description {
-  
-    font-family: $font-secondary;
+  &--autor {
+    margin: 10px;
+    font-size: 0.8rem;
   }
 
-  &--button {
-    font-size: 0.8rem;
-    // position: absolute;
-    // bottom: 0;
-    // left: 0;
-    // margin-bottom: 20px;
-    margin-left: 10px;
+  &--content {
+    margin-top: 20px;
+    text-align: justify;
   }
 }
 
 @media only screen and (min-width: 425px) {
-  .article {
-    &--title {
-      height: 80px;
-    }
+  .article-detail {
+   // text-align: left;
 
     &--image {
       height: 250px;
-    }
-
-    &:first-child {
-      grid-column: 1 / 3;
-      grid-row: 1 / 2;
-      .article--title {
-        height: 80px;
-      }
-      .article--image {
-        height: 250px;
-      }
     }
   }
 }
 
 @media only screen and (min-width: 500px) {
-  .article {
-    &--title {
-      height: 80px;
-    }
-
+  .article-detail {
     &--image {
-      height: 150px;
-    }
-
-    &:first-child {
-      .article--image {
-        height: 350px;
-      }
+      height: 300px;
     }
   }
 }
-@media only screen and (min-width: 700px) {
-  .article {
-    &--title {
-      height: 120px;
+@media only screen and (min-width: 600px) {
+  .article-detail {
+    &--image {
+      height: 350px;
     }
+  }
+}
 
-    &:first-child {
-      grid-column: 1 / 3;
-      grid-row: 1 / 2;
-
-      .article--title {
-        height: 60px;
-      }
-      .article--image {
-        height: 300px;
-      }
+@media only screen and (min-width: 700px) {
+  .article-detail {
+    &--image {
+      height: 400px;
     }
   }
 }
 
 @media only screen and (min-width: 1020px) {
-  .article {
-    &:first-child {
-      grid-column: 1 / 4;
-      grid-row: 1 / 3;
-      .article--title {
-        height: 70px;
-        font-size: 1.3rem;
-      }
-      .article--description {
-        display: block;
-        margin-bottom: 5px;
-      }
-      .article--image {
-        height: 430px;
-      }
-      .article--button {
-        margin-bottom: 80px;
-      }
+  .article-detail {
+    &--image {
+      height: 450px;
     }
   }
 }

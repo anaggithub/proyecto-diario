@@ -42,7 +42,7 @@ const ArticleDetail = () => {
                         className="article-detail--image"
                     />
                 </figure>
-                <button className="article-detail--button button button-secondary"> {article.author || "Anonimo"}</button>
+                <h4 className="article-detail--autor">Por {article.author || "Anonimo"}</h4>
                 <p className="article-detail--content">
                     {article.content}
                 </p>
