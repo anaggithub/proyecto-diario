@@ -1,22 +1,12 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 import { LayoutNews } from "../../components/layouts";
 import "./index.scss";
 
-import news from "../../services/news";
+import useArticle from "../../context/article"
 
 const ArticleDetail = () => {
 
-    const [article, setArticle] = useState([]);
-
-    useEffect(() => {
-        async function fetchData() {
-            const articles = await news("cine")
-            const firstArt = articles[0]
-            setArticle(firstArt)
-        }
-        fetchData();
-    }, [])
-
+    const { article } = useArticle()
 
     return (
         <LayoutNews>
@@ -24,7 +14,9 @@ const ArticleDetail = () => {
                 <h3 className="article-detail--title">
                     {article.title}
                 </h3>
-                <p className="article-detail--description">{article.description}</p>
+                <p className="article-detail--description">
+                    {article.description}
+                </p>
                 <figure>
                     <img
                         src={article.urlToImage}
@@ -32,7 +24,9 @@ const ArticleDetail = () => {
                         className="article-detail--image"
                     />
                 </figure>
-                <h4 className="article-detail--autor">Por {article.author || "Anonimo"}</h4>
+                <h4 className="article-detail--autor">
+                    {article.author}
+                </h4>
                 <p className="article-detail--content">
                     {article.content}
                 </p>
