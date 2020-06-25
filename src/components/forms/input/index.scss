@@ -1,0 +1,48 @@
+@import "../../../components/layouts/styles/general-styles.scss";
+
+.input {
+  @include flex-column-box;
+
+  &--row {
+    display: flex;
+    height: 50px;
+    width: 100%;
+
+    &--label {
+      text-align: left;   
+      width: 100px;
+    }
+    &--input {
+      height: 30px;
+      width: 200px;
+      &.errorClass {
+        border: solid 1px red;
+      }
+    }
+    &--error {
+      margin: 0 auto;
+    }
+  }
+}
+@media only screen and (min-width: 425px) {
+  .input--row {
+    &--label {
+      width: 30%;
+    }
+    &--input {
+      height: 30px;
+      width: 70%;
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .input--row {
+     &--label {
+      width: 30%;
+    }
+    &--input {
+      width: 70%;
+    }
+  }
+}

@@ -1,9 +1,9 @@
 import { useContext } from 'react'
-import AppContext from "../app"
+import AppConsumer from "../app"
 
 const UseArticle = () => {
 
-    const [appStorage, setStorage] = useContext(AppContext)
+    const [appStorage, setStorage] = useContext(AppConsumer)
 
     const updateArticle = (article) => {
         window.localStorage.setItem('myArticle', JSON.stringify(article) );

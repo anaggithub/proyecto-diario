@@ -5,7 +5,7 @@ import Header from "../header";
 import Footer from "../footer";
 import Weather from "../weather";
 
-const DefaultLayout = ({children}) => {
+const LayoutNews = ({ children }) => {
 
     return (
         <div className="aside-layout container">
@@ -21,4 +21,4 @@ const DefaultLayout = ({children}) => {
     );
 }
 
-export default DefaultLayout;
+export default LayoutNews;

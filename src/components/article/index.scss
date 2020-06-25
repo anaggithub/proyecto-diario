@@ -20,7 +20,9 @@
     display: none;
     font-family: $font-secondary;
   }
-
+  &--content {
+    display: none;
+  }
   &--button {
     font-size: 0.8rem;
     position: absolute;
@@ -36,20 +38,8 @@
     &--title {
       height: 80px;
     }
-
     &--image {
       height: 250px;
-    }
-
-    &:first-child {
-      grid-column: 1 / 3;
-      grid-row: 1 / 2;
-      .article--title {
-        height: 80px;
-      }
-      .article--image {
-        height: 250px;
-      }
     }
   }
 }
@@ -63,53 +53,13 @@
     &--image {
       height: 150px;
     }
-
-    &:first-child {
-      .article--image {
-        height: 350px;
-      }
-    }
+  
   }
 }
 @media only screen and (min-width: 700px) {
   .article {
     &--title {
       height: 120px;
-    }
-
-    &:first-child {
-      grid-column: 1 / 3;
-      grid-row: 1 / 2;
-
-      .article--title {
-        height: 60px;
-      }
-      .article--image {
-        height: 300px;
-      }
-    }
-  }
-}
-
-@media only screen and (min-width: 1020px) {
-  .article {
-    &:first-child {
-      grid-column: 1 / 4;
-      grid-row: 1 / 3;
-      .article--title {
-        height: 70px;
-        font-size: 1.3rem;
-      }
-      .article--description {
-        display: block;
-        margin-bottom: 5px;
-      }
-      .article--image {
-        height: 430px;
-      }
-      .article--button {
-        margin-bottom: 80px;
-      }
     }
   }
 }

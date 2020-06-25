@@ -1,12 +1,10 @@
 import React from "react";
 import "./index.scss";
-// podría ir (props), luego debajo colocar const {image, description} = props, o props.image, props.description 
-// porque props es un objeto!! Entonces se puede desestructurar
 
-const Article = ({ firstArticleClass = "", title, description, author, image}) => {
+const Article = ({ firstArticleClass = "", title, description, content, author, image, onClick }) => {
 
     return (
-        <article className={`article ${firstArticleClass}`}>
+        <article className={`article ${firstArticleClass}`} onClick={onClick}>
             <h3 className="article--title">
                 {title.substring(0, 80)}
             </h3>
@@ -18,6 +16,7 @@ const Article = ({ firstArticleClass = "", title, description, author, image}) =
                     className="article--image"
                 />
             </figure>
+            <p className="article--content">{content}</p>
             <button className="article--button button button-secondary"> {author || "Anonimo"}</button>
         </article>
     );

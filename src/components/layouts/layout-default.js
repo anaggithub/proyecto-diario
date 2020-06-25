@@ -6,9 +6,9 @@ import Footer from "../footer";
 const DefaultLayout = ({children}) => {
 
     return (
-        <div className="container">
+        <div className="default-layout container">
             <Header />
-            <div>
+            <div className="default-layout--content">
                 {children}
             </div>
             <Footer />

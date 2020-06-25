@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 
-const AppContext = React.createContext();
+const AppConsumer = React.createContext();
 
 const AppProvider = ({ children }) => {
 
@@ -20,14 +20,15 @@ const AppProvider = ({ children }) => {
                 article: window.JSON.parse(myArticle)
             }))
         }
+
     }, [])
 
     return (
-        <AppContext.Provider value={[appStorage, setStorage]}>
+        <AppConsumer.Provider value={[appStorage, setStorage]}>
             {children}
-        </AppContext.Provider>
+        </AppConsumer.Provider>
     )
 }
 
-export default AppContext
+export default AppConsumer
 export { AppProvider }

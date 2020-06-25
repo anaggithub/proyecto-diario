@@ -1,6 +1,6 @@
 import React from "react"
 import "./index.scss"
-import APITitle from "../apititle";
+import APILogo from "../api-logo";
 
 const Footer = () => {
   return (
@@ -20,7 +20,7 @@ const Footer = () => {
         </li>
       </ul>
       <div className="footer--info">
-        <APITitle className="footer--info--apititle"/> 
+        <APILogo className="footer--info--apititle"/> 
         <p className="footer--info--paragraph">
           Todos Los Derechos Reservados © 2020 
         </p>
